@@ -1,0 +1,11 @@
+#app{
+    background-color: #0080ff; /* fallback color */
+    background-image: radial-gradient(circle at top left, #b2c6da, #e9ecef); /* radial gradient */
+    padding: 1rem;
+}
+.icon{
+    display: none;
+}
+.const{
+    padding-right: 10px;
+}

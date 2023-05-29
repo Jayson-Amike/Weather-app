@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center" style="height: 100vh;">
+
+   <div id="app" class="border rounded">
+    <div id="searchSec"  >
+        <form id="search"  class="d-flex justify-content-center">
+            <input type="text" style="border-radius: 100px;" class="border rounded-1 p-2 mr-4" placeholder="Enter your city"id="inputField" name="inputField">
+            <button id="submit" class="border rounded-circle " type="submit"><img width="26" height="26" src="image/magnifier.png" alt=""></button>
+          </form> 
+    </div>
+    <div id="weatherSec" class="d-flex flex-column justify-content-center">
+        <div class="icon"><img id="WeatherImg"class="p-4" width="306" height="306"  alt=""></div>
+        <h1 id="weather" class="text-sm-center"></h1>
+        <h5 id="city" class="text-sm-center"></h5>
+    </div>
+    <div id="data" class="d-flex  justify-content-between">
+        <div id="Humidity" class="d-flex aligment-item">
+            <div class="icon const">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-thermometer-sun" viewBox="0 0 16 16">
+                    <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5z"/>
+                    <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0zM8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5zM12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5zm-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708zM8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+            </div>
+            <div class="info">
+                <div id="HumidityInfo" class="data"></div>
+                <p id="Humanitylbl" class="text-sm-left"></p>
+            </div>
+        </div>
+        <div id="Windy" class="d-flex">
+            <div class="icon const" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-wind" viewBox="0 0 16 16">
+                    <path d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>  
+            </div>
+            <div class="info">
+                <div id="WindyInfo" class="data"></div>
+                <p id="Windylbl" class="text-sm-left"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<script src="myscripts.js"></script>
